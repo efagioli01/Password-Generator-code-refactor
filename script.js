@@ -1,18 +1,36 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var numbers = "0123456789";
+var special = "!@,#$%&*{}[]/\\+=";
+var chosenCharacters = "";
 
+
+// Write password to the #password input
+
+function enterPassword() {
+  var password = generatePassword;
+  var passwordText = document.querySelector("#password");
   passwordText.value = password;
 
 }
 
+function writePassword(){
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword)
+
+
+
 function generatePassword() {
-  var options = getOptions();
+return getOptions();
+//var result = "";
 }
 
 function getOptions() {
@@ -40,22 +58,32 @@ if (
   ifHasLowerCase === false &&
   ifHasUpperCase === false
 ) {
-  alert('You must select at least one character type');
-  return
+  alert('You must select at least one of the character types');
+  return 
 };
 
-var options = {
-  length: length,
-  ifHasSpecialCharacters: ifHasSpecialCharacters,
-  ifHasNumbers: ifHasNumbers,
-  ifHasLowerCase: ifHasLowerCase,
-  ifHasUpperCase: ifHasUpperCase
-}
-  
-return options;
-} 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+if(ifHasSpecialCharacters){
+  chosenCharacters += special
+}
+if(ifHasLowerCase){
+  chosenCharacters += lower
+}
+
+if(ifHasNumbers) {
+  chosenCharacters += numbers
+}
+
+if(ifHasUpperCase) {
+  chosenCharacters += upper
+}
+let result = ""
+
+for (var i = 0; i < length; i++) {
+  result += chosenCharacters.charAt(Math.floor(Math.random() * chosenCharacters.length));
+}
+return result;
+
+}
 
 

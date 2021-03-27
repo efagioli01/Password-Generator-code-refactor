@@ -33,3 +33,4 @@ This application generates a random password based on user-selected criteria whe
  ![screenshot](./assets/images/gen2.PNG)
  ![screenshot](./assets/images/gen3.PNG)
  ![screenshot](./assets/images/gen4.PNG)
+

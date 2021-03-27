@@ -24,8 +24,8 @@ This application generates a random password based on user-selected criteria whe
 
 ## Links
 
-* [GitHub Repository]()
-* [Deployed Application]()
+* [GitHub Repository](https://github.com/efagioli01/Password-Generator-code-refactor)
+* [Deployed Application](https://efagioli01.github.io/Password-Generator-code-refactor/)
 
 
 ## Screenshot 

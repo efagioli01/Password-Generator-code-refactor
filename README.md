@@ -29,8 +29,8 @@ This application generates a random password based on user-selected criteria whe
 
 
 ## Screenshot 
- ![screenshot](./assets/images/gen1.PNG)
- ![screenshot](./assets/images/gen2.PNG)
- ![screenshot](./assets/images/gen3.PNG)
- ![screenshot](./assets/images/gen4.PNG)
+ ![screenshot](./images/gen1.PNG)
+ ![screenshot](./images/gen2.PNG)
+ ![screenshot](./images/gen3.PNG)
+ ![screenshot](./images/gen4.PNG)
 
